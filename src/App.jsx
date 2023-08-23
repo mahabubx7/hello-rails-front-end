@@ -1,8 +1,12 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Greeting from './components/Greeting';
 
 function App() {
   return (
-    <h1>Hello Rails Frontend App</h1>
+    <Routes>
+      <Route exact path="/" element={<Greeting />} />
+    </Routes>
   );
 }
 
